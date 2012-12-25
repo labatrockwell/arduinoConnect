@@ -20,7 +20,10 @@
  * Free Software Foundation, Inc., 59 Temple Place, Suite 330,
  * Boston, MA  02111-1307  USA
  * 
- * @author      Julio Terra and Quin Kennedy from LAB at Rockwell Group
+ * @author      Quin Kennedy & Julio Terra from LAB at Rockwell Group
+ *              http://www.rockwellgroup.com
+ * @credits     Code for extracting arduino serial id was adapted from 
+ *              work by Dave Vondle http://labs.ideo.com
  * @modified    12/01/20122
  * @version     ##library.prettyVersion## (##library.version##)
  */

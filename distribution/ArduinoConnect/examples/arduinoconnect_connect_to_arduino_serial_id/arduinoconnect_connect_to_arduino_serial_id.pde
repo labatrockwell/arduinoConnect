@@ -24,30 +24,24 @@ ArduinoConnect arduino;
 Serial port;
 
 void setup() {
-  // connect to a specific arduino identified by a unique serial ID number. To get 
-  // the serial ID number for an Arduino use the arduinoconnect_print_arduino_serial_id
-  // example sketch.
 
+  // Connect to Arduino identified by a unique serial ID number. 
+  // To get serial ID numbers check-out the connect_print_arduino_serial_id example sketch.
   arduino = new ArduinoConnect(this, true);
   
-  // connect to Arduino using the arduino connect library. The first argument is the
-  // Ardunion's unique ID number, the second argument is the baud rate for the 
-  // serial connection, and the third item is the character that will trigger the
-  // serialEvent callback method
+  // Connect to Arduino using the arduino connect library. 
+  //  * first argument is the Ardunino's unique ID number
+  //  * second argument is the baud rate for the serial connection
+  //  * third item is the character that will trigger the serialEvent callback method
   arduino.connect("741323434303513081F0", 57600, '\n');
   
-  // you can check if the Arduino connection has been established by calling the a
-  // arduinoConObject.isconnected method. 
+  // Check if the Arduino connection has been established 
   if (arduino.isConnected()) {
 
-    // if you prefer to have access to the serial object from a global variable, you
-    // can access it directly via the arduinoConObject.getConnection() method or the 
-    // arduinoConObject.connection variable. Here's how:
+    // Link local variable to the Arduino serial port connection object
     port = arduino.getConnection();
   
-    // you can access the serial connection object for sending messages by either using
-    // arduinoConObject.connection or by linking the serial object a local variable as 
-    // demonstrated above.
+    // Send serial message via ArduinoConnect object or local serial object var 
     arduino.connection.write("OK");
     port.write("OK");
   }
