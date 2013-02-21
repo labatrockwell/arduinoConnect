@@ -23,8 +23,9 @@ Installing the Library
 Here’s how to install the library in four (or five) easy steps:  
 1. Download the zip file from github repo.  
 2. Unzip the downloaded file.  
-3. Open "distribution" folder in the base directory.  
-4. Copy ArduinoConnect into your Processing libraries folder.  
+3. Go to "distribution / ArduinoConnect / download" from the base directory.  
+4. Unzip the ArduinoConnect.zip file
+4. Copy the contents into your Processing libraries folder.  
 5. Restart Processing if it was alredy running.  
   
 
